@@ -1,0 +1,3 @@
+---
+hostname: 'p22'
+fqdn: '{{ hostname }}.localhost'

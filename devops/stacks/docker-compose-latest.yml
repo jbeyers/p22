@@ -12,7 +12,7 @@ services:
     - "80:80"
 
   frontend:
-    image: plone/plone-frontend:latest
+    image: jbeyers/p22-frontend:latest
     environment:
       RAZZLE_INTERNAL_API_PATH: http://backend:8080/Plone
     ports:
@@ -21,12 +21,11 @@ services:
       - backend
 
   backend:
-    image: plone/plone-backend:6.0
+    image: jbeyers/p22-backend:latest
     environment:
       SITE: Plone
+      ADDITIONAL_PROFILES: "p22:default,p22:initial"
       RELSTORAGE_DSN: "dbname='plone' user='plone' host='db' password='plone'"
-    ports:
-    - "8080:8080"
     depends_on:
       - db
 
@@ -38,8 +37,6 @@ services:
       POSTGRES_DB: plone
     volumes:
     - data:/var/lib/postgresql/data
-    ports:
-    - "8001:5432"
 
 volumes:
   data: {}
