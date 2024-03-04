@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-ARG PLONE_VERSION=6.0.1
+ARG PLONE_VERSION=6.0.10.1
 FROM plone/plone-backend:${PLONE_VERSION}
 
 LABEL maintainer="Juizi CC <johan@juizi.com>" \
@@ -9,6 +9,8 @@ LABEL maintainer="Juizi CC <johan@juizi.com>" \
 
 # Add local code
 COPY . .
+RUN rm -rf src/p22
+# RUN rm scripts/create_site.py
 
 # Install local requirements and fix permissions
 RUN <<EOT

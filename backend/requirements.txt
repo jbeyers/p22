@@ -6,3 +6,12 @@ zope.testrunner
 # Add required add-ons
 # (Ideally add them in setup.py for p22)
 # collective.easyform
+
+Products.PloneKeywordManager
+collective.easyform[recaptcha]
+collective.lineage
+collective.portlet.tal
+collective.taxonomy
+eea.facetednavigation
+juizi.templates
+plone.app.imagecropping

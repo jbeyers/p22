@@ -1,8 +1,8 @@
 default_context:
     initial_user_name: 'admin'
-    initial_user_password: 'admin'
+    initial_user_password: 'zarquonbazilis'
 
     load_zcml:
-        package_includes: ['p22']
+        package_includes: ['collective.easyform', 'eea.facetednavigation', 'juizi.templates']
 
     db_storage: direct
