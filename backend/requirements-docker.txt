@@ -1,5 +1,5 @@
 -c constraints.txt
-src/juizi.templates
+# src/juizi.templates
 src/juizi.reports
 Products.PloneKeywordManager
 collective.easyform[recaptcha]
@@ -14,5 +14,8 @@ plone.app.imagecropping
 # Multilingual Support
 # collective.portlet.tal
 pandas # From juizi.reports
-requests
-mailchimp
+# requests
+# mailchimp
+# mailerlite
+# z3c.jbot
+# json_log_formatter

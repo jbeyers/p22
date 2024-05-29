@@ -3,6 +3,6 @@ default_context:
     initial_user_password: 'zarquonbazilis'
 
     load_zcml:
-        package_includes: ['collective.easyform', 'eea.facetednavigation', 'juizi.templates']
+        package_includes: ['collective.easyform', 'eea.facetednavigation']
 
     db_storage: direct
