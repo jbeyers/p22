@@ -1,17 +1,21 @@
 -c constraints.txt
--e src/p22[test]
-
-zope.testrunner
-
-# Add required add-ons
-# (Ideally add them in setup.py for p22)
-# collective.easyform
-
+# src/juizi.templates
+src/juizi.reports
 Products.PloneKeywordManager
 collective.easyform[recaptcha]
 collective.lineage
-collective.portlet.tal
 collective.taxonomy
 eea.facetednavigation
-juizi.templates
 plone.app.imagecropping
+# P22 addons
+# src/p22
+# Not sure what these are
+# search (navigation)
+# Multilingual Support
+# collective.portlet.tal
+pandas # From juizi.reports
+# requests
+# mailchimp
+# mailerlite
+# z3c.jbot
+# json_log_formatter

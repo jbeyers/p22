@@ -92,7 +92,7 @@ bin/pip:
 .PHONY: config
 config: bin/pip  ## Create instance configuration
 	@echo "$(GREEN)==> Create instance configuration$(RESET)"
-	bin/cookiecutter -f --no-input --config-file instance.yaml gh:plone/cookiecutter-zope-instance
+	bin/cookiecutter -c 1.0.1 -f --no-input --config-file instance.yaml gh:plone/cookiecutter-zope-instance
 
 # i18n
 bin/i18ndude: bin/pip
@@ -163,4 +163,4 @@ debug: instance/etc/zope.ini ## Run debug console
 
 .PHONY: build-image
 build-image:  ## Build Docker Image
-	@DOCKER_BUILDKIT=1 docker build . -t $(IMAGE_NAME):$(IMAGE_TAG) -f Dockerfile --build-arg PLONE_VERSION=$(PLONE_VERSION)
+	@DOCKER_BUILDKIT=1 docker build . -t $(IMAGE_NAME):$(IMAGE_TAG) -f Dockerfile --progress plain --build-arg PLONE_VERSION=$(PLONE_VERSION)
