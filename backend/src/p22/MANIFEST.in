@@ -1,6 +1,0 @@
-graft src/p22
-graft docs
-include *.rst
-include *.md
-include *.cfg
-global-exclude *.pyc
