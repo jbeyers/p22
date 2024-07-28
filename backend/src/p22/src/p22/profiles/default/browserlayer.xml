@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer interface="p22.interfaces.IP22Layer"
+         name="p22"
+  />
+</layers>

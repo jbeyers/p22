@@ -1,0 +1,7 @@
+---
+project_folders:
+  # Path to store p22.juizi.com postgres data
+  - path: "/srv/p22/data"
+    owner: 999
+    group: 999
+    mode: "0750"
