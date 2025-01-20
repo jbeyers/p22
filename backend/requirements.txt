@@ -4,3 +4,4 @@ zope.testrunner
 flake8-pyproject
 
 collective.volto.dropdownmenu==1.3.2
+collective.exportimport==1.13
