@@ -1,6 +1,6 @@
 default_context:
     initial_user_name: 'admin'
     initial_user_password: 'admin'
-    zcml_package_includes: 'p22'
+    zcml_package_includes: 'p22,collective.taxonomy'
 
     db_storage: direct
